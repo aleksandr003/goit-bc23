@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- <a href="" class="test-link">test link</a> -->
     <section class="hero">
-      <div class="hero-aside">
+      <button type="button" class="c-btn hero-btn">book a haircut</button>
+      <button type="button" class="c-btn mybutton">book a haircut</button>
+      
+      <div class="hero__aside">
         <a href="/">
           <img src="./images/logo.svg" alt="logo" />
         </a>
@@ -19,7 +38,6 @@
           <div class="line-decorator"></div>
         </div>
       </div>
-
       <div>
         <header class="header">
           <nav>
@@ -47,20 +65,20 @@
             </li>
           </ul>
         </header>
-        <div class="hero-section-inner">
-          <div class="hero-section-wrapper">
-            <div class="hero-section-uptitle">
+        <div class="hero__inner">
+          <div class="hero__wrapper">
+            <div class="hero__uptitle">
               <p>A hair salon for men in Kyiv</p>
             </div>
 
-            <h1 class="hero-section-title">BarberShop</h1>
+            <h1 class="c-title hero__title">BarberShop</h1>
 
-            <p class="hero-section-description">
+            <p class="hero__description">
               We are <span class="accent">experts</span> in trendy men's
               haircuts. We work quickly, carefully, and tastefully.
             </p>
           </div>
-          <div class="hero-controls">
+          <div class="hero__controls">
             <button type="button">Вперед</button>
             <button type="button">Назад</button>
           </div>
@@ -80,7 +98,9 @@
 
         <div class="best-barber__right">
           <p class="best-barber__uptitle">о нас</p>
-          <h2 class="best-barber__title">Лучший Барбершоп твоего города</h2>
+          <h2 class="best-barber__title title">
+            Лучший Барбершоп твоего города
+          </h2>
           <p class="c-text-18 best-barber__note">
             Если ты хочешь добавить в свой образ больше уверенности – тебе точно
             к нам.
