@@ -78,9 +78,6 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-.gallery {
-    display: none;
-}
 
 .list-item {
     background-color: antiquewhite;
@@ -100,4 +97,4 @@ body {
 
 .list-item:last-child {
     margin-bottom: 0;
-} 
+}
