@@ -25,130 +25,21 @@
   </head>
 
   <body>
-    <div class="container flex-container">
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-
-
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-      <div class="flex-element">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
-          praesentium quos voluptatem eligendi, ut exercitationem at blanditiis
-          aliquam officia quaerat?
-        </p>
-        <a href="" class="c-btn"> Follow me </a>
-      </div>
-    </div>
     <section class="hero">
       <div class="hero-aside">
         <a href="/">
           <img src="./images/logo.svg" alt="logo" />
         </a>
 
-        <div class="aside-links">
-          <a href="" class="aside-link"> Instagram</a>
-          <a href="" class="aside-link"> Youtube </a>
-          <div class="line-decorator"></div>
-        </div>
+        <ul class="aside-links">
+          <li>
+            <a href="#" class="aside-link"> Instagram</a>
+          </li>
+          <li>
+            <a href="#" class="aside-link"> Youtube </a>
+          </li>
+          <li class="line-decorator"></li>
+        </ul>
       </div>
       <div class="hero-main">
         <header class="header">
@@ -179,20 +70,31 @@
         </header>
         <div class="hero-inner">
           <div class="hero-wrapper">
-            <div class="hero-uptitle">
+            <div class="c-uptitle hero-uptitle">
               <p>A hair salon for men in Kyiv</p>
             </div>
 
             <h1 class="c-title hero-title">BarberShop</h1>
 
-            <p class="hero-description">
-              We are <span class="accent">experts</span> in trendy men's
-              haircuts. We work quickly, carefully, and tastefully.
+            <p class="c-text-18 hero-description">
+              We are experts in trendy men's haircuts. We work quickly,
+              carefully, and tastefully.
             </p>
           </div>
+          <ul class="hero-bullets">
+            <li class="hero-bullet active">
+              <button type="button" aria-label="1"></button>
+            </li>
+            <li class="hero-bullet">
+              <button type="button" aria-label="1"></button>
+            </li>
+            <li class="hero-bullet">
+              <button type="button" aria-label="1"></button>
+            </li>
+          </ul>
           <div class="hero-controls">
-            <button type="button">Вперед</button>
-            <button type="button">Назад</button>
+            <button type="button" class="control-btn back">Назад</button>
+            <button type="button" class="control-btn forward">Вперед</button>
           </div>
         </div>
       </div>
@@ -211,7 +113,9 @@
           </div>
 
           <div class="best-barber-right">
-            <p class="best-barber-uptitle">о нас</p>
+            <div class="c-uptitle best-barber-uptitle">
+              <p>о нас</p>
+            </div>
             <h2 class="best-barber-title title">
               Лучший Барбершоп твоего города
             </h2>
@@ -220,7 +124,7 @@
               Если ты хочешь добавить в свой образ больше уверенности – тебе
               точно к нам.
             </p>
-            <p>
+            <p class="c-text-14">
               Мы команда, которая никогда не останавливается на достигнутом и
               жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
               никогда не сможешь быть прежним. Мы команда, которая всегда с
@@ -233,7 +137,9 @@
       </section>
       <section class="c-section service">
         <div class="container">
-          <p>Проведи время в компании лучших мастеров</p>
+          <div class="c-uptitle">
+            <p>Проведи время в компании лучших мастеров</p>
+          </div>
           <h2>Услуги и цены</h2>
           <div>
             <ul>
@@ -306,7 +212,10 @@
           </ul>
 
           <div class="our-choice__right">
-            <p class="our-choice__uptitle">старая традиционная школа</p>
+            <div class="c-uptitle our-choice__uptitle">
+              <p>старая традиционная школа</p>
+            </div>
+
             <h2 class="best-barber__title">Почему приходят именно к нам?</h2>
             <p>
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
@@ -317,7 +226,10 @@
       </section>
       <section class="c-section our-masters">
         <div class="container">
-          <p>для настоящих ценителей атмосферы</p>
+          <div class="c-uptitle">
+            <p>для настоящих ценителей атмосферы</p>
+          </div>
+
           <h2>Наши мастера</h2>
           <ul>
             <li>
@@ -359,7 +271,9 @@
       <section class="c-section gallery">
         <div class="container">
           <h1 class="gallery-title">Галерея - Наші роботи</h1>
-          <p>На латинском языке “барба” означает “борода”</p>
+          <div class="c-uptitle">
+            <p>На латинском языке “барба” означает “борода”</p>
+          </div>
           <ul>
             <li>
               <img src="./images/gallery-1.jpg" alt="Masters during haircut" />
