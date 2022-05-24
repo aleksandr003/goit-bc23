@@ -1,6 +1,7 @@
-# html-css-23
+# html-css-22
 
-- QnA
-- Разбор страницы "Портфолио"
-- [System Font Stack](https://systemfontstack.com/) и [это](https://devhints.io/css-system-font-stack)
-- Практика: шрифты и оформление текста
+- Иконки на карточке товара
+- Оверлей
+- Фиксированная шапка
+- Модальное окно (https://fancyapps.com/fancybox/3/)
+- Выпадающее меню
