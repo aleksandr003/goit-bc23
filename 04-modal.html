@@ -53,7 +53,7 @@
     </p>
 
     <div class="backdrop is-hidden" data-backdrop>
-      <div class="modal">
+      <div class="modal" data-modal>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
           debitis quibusdam doloremque perspiciatis distinctio consequuntur
@@ -62,7 +62,7 @@
           iusto eius aut facilis doloribus aliquam quae vitae dolor
           voluptatibus? Accusamus corrupti cumque odio illo.
         </p>
-        <button data-close-modal>Закрыть</button>
+        <button class="close-btn" data-close-modal>Закрыть</button>
       </div>
     </div>
 
@@ -71,18 +71,24 @@
         openModalBtn: document.querySelector("[data-open-modal]"),
         closeModalBtn: document.querySelector("[data-close-modal]"),
         backdrop: document.querySelector("[data-backdrop]"),
+        modal: document.querySelector("[data-modal]"),
       };
 
       refs.openModalBtn.addEventListener("click", toggleModal);
       refs.closeModalBtn.addEventListener("click", toggleModal);
-
+      refs.modal.addEventListener("click", handleModalClick);
       refs.backdrop.addEventListener("click", logBackdropClick);
 
       function toggleModal() {
         refs.backdrop.classList.toggle("is-hidden");
       }
 
-      function logBackdropClick() {
+      function handleModalClick(e) {
+        e.stopPropagation();
+      }
+
+      function logBackdropClick(e) {
+        refs.backdrop.classList.toggle("is-hidden");
         console.log("Это клик в бекдроп");
       }
     </script>
