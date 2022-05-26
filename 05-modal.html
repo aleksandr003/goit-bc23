@@ -83,8 +83,10 @@
         refs.backdrop.classList.toggle('is-hidden');
       }
 
-      function logBackdropClick() {
-        console.log('Это клик в бекдроп');
+      function logBackdropClick(e) {
+        if(e.target.className !== 'backdrop') return;
+        
+        refs.backdrop.classList.toggle('is-hidden');
       }
     </script>
   </body>
