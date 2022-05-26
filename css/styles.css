@@ -22,6 +22,7 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.02em;
+    margin: 0;
 }
 
 /* Common styles - Загальні стилі */
@@ -309,16 +310,16 @@ body {
     justify-content: flex-end;
 }
 .control-btn {
-    background-color: transparent;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.3;
-
     letter-spacing: 0.1em;
     color: var(--gray-text-color-60);
 
     border: none;
     border-bottom: 1px solid var(--gray-text-color-60);
+    background-color: transparent;
+    
     padding-bottom: 8px;
     padding-right: 20px;
     padding-left: 0;
@@ -437,7 +438,7 @@ body {
     list-style: none;
     padding: 0 100px;
     margin: 0;
-    /* width: 100%; */
+
     max-width: 570px;
     flex-wrap: wrap;
 }
@@ -460,15 +461,18 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
     font-weight: 700;
     font-size: 42px;
     line-height: 1.35;
     text-align: center;
     letter-spacing: 0.05em;
+
     margin-bottom: 6px;
 }
 .our-choice-item .item-description {
     margin: 0;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.3;
@@ -590,6 +594,11 @@ body {
 .example-img {
     display: block;
 }
+
+.work-example {
+    transition: box-shadow var(--transition-duration);
+}
+
 .work-example:not(:last-child) {
     margin-right: 30px;
 }
@@ -599,20 +608,106 @@ body {
 }
 
 .contact-us {
-  background-color: #191C26;
+    background-color: #191c26;
 }
 
 .contact-us > .container {
     display: flex;
+}
 
+.contact-left {
+    width: 53%;
+}
+.contact-left,
+.contact-right {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.contact-right {
+    width: 47%;
+    background-image: url("../images/bg-contacts.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-left: 100px;
+}
+.contact-right .c-title {
+    color: var(--white);
 }
 
 .address {
-   
+    display: block;
+    margin-top: 40px;
+    font-style: normal;
 }
 
 .address-link {
     display: flex;
     align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 20px;
+    text-decoration: none;
+    
+
+    color: var(--lighter-text-color);
 }
 
+.address-link svg {
+    margin-right: 20px;
+    margin-top: 4px;
+}
+
+.timetable {
+    margin-top: 70px;
+}
+.timetable .c-uptitle::before {
+    background: rgba(157, 164, 189, 0.4);
+}
+.timetable-title {
+    color: var(--white);
+}
+.timetable-hours {
+    color: var(--lighter-text-color);
+    font-size: 18px;
+}
+
+.footer {
+   background-color: var(--biege-bg-color);
+   padding: 56px 0;
+}
+
+.footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    margin: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    
+    letter-spacing: 0.2em;
+    color: var(--lighter-text-color);
+}
+
+.footer-links {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.footer-links::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+
+    background-color: var(--title-color);
+}
+
+.footer-link {
+    margin-left: 40px;
+}
