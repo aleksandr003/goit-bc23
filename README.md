@@ -1,6 +1,7 @@
-# html-css-23
+# html-css-22
 
-- QnA
-- Разбор страницы "Портфолио"
-- [System Font Stack](https://systemfontstack.com/) и [это](https://devhints.io/css-system-font-stack)
-- Практика: шрифты и оформление текста
+- Верстаем произвольную форму с использованием стандартных элементов
+- Пройтись по атрибутам name, value, placeholder, autofocus, [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete), required, checked и т. д.
+- Рассмотреть тег button:submit и почему не input:button
+- Разобрать радио-кнопки и чекбоксы, важность name и value.
+- Подробнее объяснить проблему стилизации fieldset через flexbox и почему используем div[role="group"].
