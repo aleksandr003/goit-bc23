@@ -12,90 +12,146 @@
   </head>
   <body>
     <form class="form js-speaker-form">
-      <div class="form-field">
-        <label for="name">Имя</label>
+      <label class="input-group">
         <input
+          autocomplete="off"
+          class="input"
           type="text"
           name="name"
-          id="name"
-          placeholder="Иван Иваныч"
-          autofocus
+          placeholder=" "
         />
-      </div>
+        <span class="input-text">Имя</span>
+        <svg width="30" height="30" class="icon">
+          <use href="./images/symbol-defs.svg#icon-user"></use>
+        </svg>
+      </label>
 
-      <div class="form-field">
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" placeholder="+30**-000-00-00" />
-      </div>
+      <label class="input-group">
+        <input
+          class="input"
+          type="tel"
+          name="tel"
+          id="tel-number"
+          placeholder=" "
+          autocomplete="off"
+        />
+        <span class="input-text">Телефон</span>
 
-      <div class="form-field">
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
-      </div>
+        <svg width="30" height="30" class="icon">
+          <use href="./images/symbol-defs.svg#icon-phone"></use>
+        </svg>
+      </label>
+
+      <label class="input-group">
+        <input
+          class="input"
+          type="email"
+          name="mail"
+          placeholder=" "
+          autocomplete="off"
+        />
+        <span class="input-text">Почта</span>
+        <svg width="30" height="30" class="icon">
+          <use href="./images/symbol-defs.svg#icon-mail"></use>
+        </svg>
+      </label>
 
       <div role="group" class="group">
         <h2 class="group-title">Тема доклада</h2>
 
         <ul class="topic-options">
           <li>
-            <input type="checkbox" name="topic" value="html" id="html" />
-            <label for="html">HTML</label>
+            <label class="checkbox-group">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="topic"
+                value="html"
+              />
+
+              <span class="checkbox-text">HTML</span>
+
+              <svg class="checkbox-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-tick"></use>
+              </svg>
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="topic" value="css" id="css" />
-            <label for="css">CSS</label>
+            <label class="checkbox-group">
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="topic"
+                value="css"
+              />
+              <span class="checkbox-text">CSS</span>
+
+              <svg class="checkbox-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-tick"></use>
+              </svg>
+            </label>
           </li>
           <li>
-            <input type="checkbox" name="topic" value="js" id="js" />
-            <label for="js">JavaScript</label>
+            <label class="checkbox-group">
+              <input class="checkbox" type="checkbox" name="topic" value="js" />
+              <span class="checkbox-text">JavaScript</span>
+
+              <svg class="checkbox-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-tick"></use>
+              </svg>
+            </label>
           </li>
         </ul>
       </div>
 
-      <div role="group" class="group">
+      <div role="radiogroup" class="group">
         <h2 class="group-title">Уровень вашей экспертизы</h2>
 
         <ul class="experince-options">
           <li>
-            <input type="radio" name="experience" value="junior" id="junior" />
-            <label for="junior">Junior</label>
+            <label>
+              <input type="radio" name="experience" value="junior" />
+              <span>Junior</span>
+            </label>
           </li>
           <li>
-            <input type="radio" name="experience" value="middle" id="middle" />
-            <label for="middle">Middle</label>
+            <label>
+              <input type="radio" name="experience" value="middle" />
+              <span>Middle</span>
+            </label>
           </li>
           <li>
-            <input type="radio" name="experience" value="senior" id="senior" />
-            <label for="senior">Senior</label>
+            <label>
+              <input type="radio" name="experience" value="senior" />
+              <span>Senior</span>
+            </label>
           </li>
         </ul>
       </div>
 
-      <div class="form-field">
+      <div class="input-group">
         <label for="date">Дата доклада</label>
         <input type="datetime-local" name="date" id="date" class="date" />
       </div>
 
-      <div class="form-field">
+      <div class="input-group">
         <label for="pdf">Загрузите копию доклада в pdf</label>
         <input type="file" name="pdf" id="pdf" />
       </div>
 
-      <div class="form-field">
-        <label for="comment">Оставьте коментарий</label>
+      <label class="input-group">
         <textarea
           class="comment"
           name="comment"
-          id="comment"
-          rows="8"
           placeholder="Уточните детали доклада"
         ></textarea>
-      </div>
+        <span class="input-text">Оставьте коментарий</span>
+      </label>
 
-      <div class="form-field">
-        <input type="checkbox" name="policy" id="policy" />
-        <label for="policy">Соглашаюсь на всё, за еду</label>
-      </div>
+      <label class="input-group">
+        <input type="checkbox" name="policy" />
+        <span>Соглашаюсь на всё, за еду</span>
+      </label>
 
       <button type="submit">Оставить заявку</button>
     </form>
@@ -111,8 +167,12 @@
               console.log(`${name}: ${value}`),
             );
 
-            e.currentTarget.reset();
+            // e.currentTarget.reset();
           });
+
+        document.querySelector('#tel-number').addEventListener('input', e => {
+          console.log(e.target.value);
+        });
       })();
     </script>
   </body>
