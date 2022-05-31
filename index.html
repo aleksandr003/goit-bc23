@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Barbershop</title>
     <!-- Нормалізатор стилів(Нормалайз) -->
     <link
       rel="stylesheet"
@@ -13,6 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <meta name="description" content="We are experts in trendy men's haircuts. We work quickly,
+    carefully, and tastefully.">
     <!-- Ваші шрифти -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
     <!-- Ваші стилі -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -346,6 +352,27 @@
         <div class="container">
           <div class="contact-left">
             <h2 class="c-title">Онлайн запись</h2>
+            <form class="contact-form">
+              <label class="input-group">
+                <input type="text" class="input" placeholder=" " required/>
+                <span class="input-label">Имя*</span>
+              </label>
+              <label class="input-group">
+                <input type="tel" class="input" placeholder=" " required/>
+                <span class="input-label">Телефон*</span>
+              </label>
+
+              <label class="input-group">
+                <textarea type="tel" class="input textarea" placeholder=" "></textarea>
+                <span class="input-label">Cообщение</span>
+              </label>
+
+              <div class="contact-btn-wrapper">
+                <button type="submit" class="c-btn contact-form-btn">
+                  Отправить
+                </button>
+              </div>
+            </form>
           </div>
           <div class="contact-right">
             <h2 class="c-title">Контакты</h2>
@@ -395,7 +422,7 @@
 
 
 
-    <footer class="footer2">
+    <!-- <footer class="footer2">
       <div class="container">
        <div class="footer-col">
         <a href="#" class="footer-logo-link">
@@ -473,7 +500,7 @@
         </div>
        </div> 
       </div>
-    </footer>
+    </footer> -->
 
   </body>
 </html>
