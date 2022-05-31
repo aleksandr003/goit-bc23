@@ -139,11 +139,11 @@
         <input type="file" name="pdf" id="pdf" />
       </div>
 
-      <label class="input-group">
+      <label class="input-group textarea-group">
         <textarea
           class="comment"
           name="comment"
-          placeholder="Уточните детали доклада"
+          placeholder="Залиште комментарій... "
         ></textarea>
         <span class="input-text">Оставьте коментарий</span>
       </label>
@@ -153,7 +153,7 @@
         <span>Соглашаюсь на всё, за еду</span>
       </label>
 
-      <button type="submit">Оставить заявку</button>
+      <button type="submit" class="form-btn" disabled>Оставить заявку</button>
     </form>
 
     <script>
@@ -170,8 +170,13 @@
             // e.currentTarget.reset();
           });
 
-        document.querySelector('#tel-number').addEventListener('input', e => {
+        document.querySelector('.comment').addEventListener('input', e => {
           console.log(e.target.value);
+          if(e.target.value !== "") {
+            document.querySelector('.form-btn').removeAttribute('disabled');
+          } else {
+            document.querySelector('.form-btn').setAttribute('disabled', true);
+          }
         });
       })();
     </script>
