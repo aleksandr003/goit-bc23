@@ -5,7 +5,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    @extend %c-section;
+    
     .c-uptitle {
         color: $gray-text-color-60;
         &::before {
